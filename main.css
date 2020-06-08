@@ -152,4 +152,7 @@ li{
         min-height: 40px;
         font-size: small;
     }
+    aside{
+        margin-bottom: 20px;
+    }
 }
