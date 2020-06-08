@@ -1,8 +1,6 @@
 *{
-    color: #EFE7da;
-}
-a{
-    color: #EFE7da;
+    color: #AF9FA5;
+    font-family: 'Josefin Sans', sans-serif;
 }
 a:hover{
     color: #ff934F;
@@ -20,15 +18,15 @@ header{
     /* position: fixed; */
 }
 .content-main{
-    background-color: #2b4162;
-    color: black;
+    /* background-color: #385f71; */
     min-height: 50px ;
     padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* padding: 10px; */
     /* border: 1px solid #0E4749; */    
 }
 .content-aside{
-    background-color: orange;
+    /* background-color: orange; */
     min-height: 50px;
     border: 1px solid black;
 }
@@ -39,7 +37,10 @@ header{
     background-color: #fFEFD6;
 }
 .bgTertiary{
-    background-color: #abc4ab;
+    background-color: #385f71;
+}
+.text-white{
+    color: #EFE7da;
 }
 footer{
     min-height: 56px;
@@ -81,6 +82,52 @@ footer{
 .fb-200 .imgBlock:hover{
     transform: scale(1.5);
 }
+.input-contact{
+    padding: 10px;
+    width: 80%;
+}
+textarea {
+    width: 99%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    color: black;
+  }
+input[type=submit]{
+    padding: 12px 20px;
+    margin: 10px;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+
+}
+input[type=submit]:hover {
+    box-shadow: inset 0px 0px 5px black;
+}
+h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    color: #EFE7da;
+}
+h3{
+    color: #EFE7da;
+}
+.in-text-link{
+    color: #ff934F;
+}
+.in-text-link:hover{
+    color: #fFEFD6;
+}
+li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}
 @media (max-width:992px){
     aside{
         margin-top: 10px;
@@ -90,6 +137,9 @@ footer{
     }
     .content-main{
         justify-self:center;
+    }
+    .comment-box{
+        padding-top: 10px;
     }
 }
 @media (max-width: 768px){
