@@ -1,6 +1,18 @@
 *{
     color: #EFE7da;
 }
+a{
+    color: #EFE7da;
+}
+a:hover{
+    color: #ff934F;
+}
+article{
+    padding: 10px;
+}
+address{
+    color: black;
+}
 header{
     background-color: #002626;
     margin-bottom: 5px;
@@ -8,11 +20,12 @@ header{
     /* position: fixed; */
 }
 .content-main{
-    background-color: #abc4ab;
+    background-color: #2b4162;
+    color: black;
     min-height: 50px ;
-    padding-top: 1%;
-    /* border: 1px solid red; */
-    /* margin: auto; */
+    padding-top: 10px;
+    /* padding: 10px; */
+    /* border: 1px solid #0E4749; */    
 }
 .content-aside{
     background-color: orange;
@@ -23,23 +36,22 @@ header{
     background-color: #0E4749;
 }
 .bgSecondary{
-    background-color: #002626;
+    background-color: #fFEFD6;
 }
 .bgTertiary{
     background-color: #abc4ab;
 }
 footer{
     min-height: 56px;
+    color: black;
     /* background-color: chartreuse; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: center;
-    margin: 5px 1px;
+    margin: 5px 2px;
+    text-align: center;
 }
 .margin-top{
     margin-top: 85px;
-}
-.textContet{
-
 }
 .imgBlock{
     display: block;
@@ -49,10 +61,43 @@ footer{
     /* align-self: center;
     display: flex */
 }
-
+.imgHeader{
+    max-width: 56px;
+}
+.imgFooter{
+    display: inline-block;
+    max-height: 56px;
+}
+.fb-200 {
+    flex-basis: 200px;
+}
+.fb-full-200 {
+    flex-basis: calc(100% - 200px);
+    padding: 0px 10px;
+}
+.testDiv{
+    margin: 85px 10px 10px;
+}
+.fb-200 .imgBlock:hover{
+    transform: scale(1.5);
+}
 @media (max-width:992px){
     aside{
         margin-top: 10px;
     }
-
+    main{
+        padding-left: 10px;
+    }
+    .content-main{
+        justify-self:center;
+    }
+}
+@media (max-width: 768px){
+    .imgFooter{
+        max-height: 40px;
+    }
+    footer{
+        min-height: 40px;
+        font-size: small;
+    }
 }
